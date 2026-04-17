@@ -34,3 +34,33 @@ function assignSources(arr, folder, total) {
 tryButton.addEventListener('click', () => {
     window.location.href = 'landscapes.html'
 })
+
+const tray = document.getElementById("tray")
+const menu = document.createElement('div')
+const save = document.createElement('button')
+menu.style.display = 'none'
+menu.appendChild(save)
+menu.style.zIndex = '999'
+save.style.zIndex = '1000'
+addingImages = sessionStorage.getItem('addToList')
+const Images = document.createElement('div')
+tray.appendChild(Images)
+Images.style.display = 'grid'
+Images.style.gridTemplateColumns = 'repeat(28, 1fr)'
+Images.style.columnGap = '0%'
+Images.style.rowGap = '5px'
+if (addingImages) {
+    if (addingImages.length != 0) {
+        addingImages = addingImages.split(',')
+        addingImages.forEach(imageUrl => {
+            const addedImage = document.createElement('img')
+            addedImage.src = imageUrl
+            addedImage.style.height = '80px'
+            addedImage.style.width = '40px'
+            addedImage.style.marginTop = '0%'
+            addedImage.className = "tray-item"
+            Images.appendChild(addedImage)
+            console.log("re added to tray")
+        })
+    }
+}
