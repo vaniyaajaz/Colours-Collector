@@ -11,8 +11,6 @@ const totalNImages = 15
 const totalOImages = 15
 const totalPImages = 15
 
-sessionStorage.clear()
-
 assignSources(landscapeImages, 'landscapes/', totalLImages)
 assignSources(natureImages, 'nature/', totalNImages)
 assignSources(objectsImages, 'objects/', totalOImages)
