@@ -18,6 +18,11 @@ if (urls) {
             Addedimage.addEventListener('mouseenter', () => {
                 lastHoveredImg = Addedimage.src
             })
+            Addedimage.addEventListener('click', () => {
+                const rect = Addedimage.getBoundingClientRect()
+                displayMenu(rect.left, rect.top)
+                lastHoveredImg = Addedimage.src
+            })
         })
     }
 }
