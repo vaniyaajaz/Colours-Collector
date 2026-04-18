@@ -2,7 +2,7 @@ const current = document.getElementById("current")
 current.style.textDecoration = 'underline'
 current.style.textUnderlineOffset = '125%'
 const container = document.getElementById("imagesLandscapes")
-const totalLImages = 40
+const totalLImages = 120
 const tray = document.getElementById("tray")
 const menu = document.createElement('div')
 const save = document.createElement('button')
@@ -50,6 +50,11 @@ images.forEach(image => {
     image.addEventListener('mouseenter', () => {
         const rect = image.getBoundingClientRect()
         displayMenu(rect.left, rect.top)
+    })
+    image.addEventListener('click', () => {
+        const rect = image.getBoundingClientRect()
+        displayMenu(rect.left, rect.top)
+        lastHoveredImg = image.src
     })
 })
 
