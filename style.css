@@ -21,6 +21,7 @@ html {
 }
 
 .bodies {
+    width: 99.8vw;
     margin-top: 0%;
     margin-left: 0.25%;
     margin-right: 0.25%;
@@ -344,10 +345,9 @@ img {
     }
 
     #tray {
-
         height: 100px !important;
         font-size: 1rem;
-        padding-left: 7px !important;
+        padding-left: 2px !important;
     }
 
     #tryItYourself {
@@ -357,18 +357,20 @@ img {
 
     .tray-item {
         height: 58px !important;
-        width: 35px !important;
+        width: 36px !important;
     }
 
     .imagesDivTray {
+        display: grid !important;
         width: 99vw;
-        grid-template-columns: repeat(10, 1fr) !important;
+        grid-template-columns: repeat(auto-fill, minmax(38px, 1fr)) !important;
+        row-gap: 3px !important;
     }
 }
 
 @media screen and (max-width: 768px) {
     a {
-        font-size: 0.8rem !important;
+        font-size: 0.6rem !important;
     }
 }
 
@@ -397,16 +399,16 @@ img {
 
 @media screen and (max-width: 768px) {
     #trayElements {
-        width: fit-content;
-        grid-template-columns: repeat(5, 1fr) !important;
+        width: 95vw;
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
         row-gap: 7px !important;
         column-gap: 7px !important;
     }
 
     .trayImages {
-        height: 100px !important;
+        height: 78px !important;
         width: 100% !important;
-        object-fit: contain !important;
+        object-fit: cover !important;
     }
 
     #clearAll {
