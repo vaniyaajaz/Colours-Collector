@@ -314,3 +314,124 @@ img {
 
 
 /* #endregion */
+
+/* #region media queries */
+
+@media screen and (max-width: 768px) {
+    #page1Body {
+        overflow-x: clip;
+        overflow-y: scroll;
+        box-shadow:
+            0 -5px 5px -5px #ca6eff,
+            5px 0 5px -5px #ca6eff,
+            -5px 0 5px -5px #ca6eff;
+    }
+
+    #container {
+        flex-direction: column !important;
+        gap: 80px !important;
+    }
+
+    .specificImages {
+        display: grid;
+        grid-template-columns: 75px 75px 75px 75px 75px;
+        grid-template-rows: 75px;
+    }
+
+    img {
+        height: 75px;
+        width: 60px;
+    }
+
+    #tray {
+
+        height: 100px !important;
+        font-size: 1rem;
+        padding-left: 7px !important;
+    }
+
+    #tryItYourself {
+        left: 38% !important;
+        margin-top: -73% !important;
+    }
+
+    .tray-item {
+        height: 58px !important;
+        width: 35px !important;
+    }
+
+    .imagesDivTray {
+        width: 99vw;
+        grid-template-columns: repeat(10, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    a {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #imagesLandscapes {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+
+    #imagesNature {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+
+    #imagesObjects {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+
+    #imagesPatterns {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+
+    .imagesCreated {
+        height: 100px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #trayElements {
+        width: fit-content;
+        grid-template-columns: repeat(5, 1fr) !important;
+        row-gap: 7px !important;
+        column-gap: 7px !important;
+    }
+
+    .trayImages {
+        height: 110px !important;
+        width: 76px !important;
+    }
+
+    #clearAll {
+        top: 14% !important;
+        right: 22% !important;
+        height: 40px !important;
+        width: 40px !important;
+        font-size: 0.6rem;
+    }
+
+    #downloadAll {
+        top: 14% !important;
+        right: 10% !important;
+        height: 40px !important;
+        width: 40px !important;
+        font-size: 0.4rem;
+    }
+
+    #trayHeading {
+        margin-bottom: 8% !important;
+    }
+
+    #trayElements {
+        padding-left: 1.5% !important;
+        padding-right: 1.5% !important;
+    }
+}
+
+/* #endregion */
