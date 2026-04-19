@@ -111,7 +111,7 @@ img {
 }
 
 #tryItYourself {
-    position: fixed;
+    position: absolute;
     left: 44%;
     background-color: #ca6eff;
     height: 60px;
