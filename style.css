@@ -331,6 +331,7 @@ img {
     #container {
         flex-direction: column !important;
         gap: 80px !important;
+        margin-bottom: 100px !important;
     }
 
     .specificImages {
