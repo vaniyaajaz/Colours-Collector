@@ -19,6 +19,7 @@ Images.style.display = 'grid'
 Images.style.gridTemplateColumns = 'repeat(28, 1fr)'
 Images.style.columnGap = '0%'
 Images.style.rowGap = '5px'
+Images.className = 'imagesDivTray'
 let urls = []
 if (addingImages) {
     if (addingImages.length != 0) {
