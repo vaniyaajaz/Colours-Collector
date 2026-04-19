@@ -404,8 +404,9 @@ img {
     }
 
     .trayImages {
-        height: 110px !important;
-        width: 76px !important;
+        height: 100px !important;
+        width: 100% !important;
+        object-fit: contain !important;
     }
 
     #clearAll {
