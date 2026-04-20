@@ -112,7 +112,7 @@ img {
 
 #tryItYourself {
     position: absolute;
-    left: 44%;
+    left: 47.5%;
     background-color: #ca6eff;
     height: 60px;
     width: 60px;
@@ -120,7 +120,7 @@ img {
     outline: white 1px solid;
     border: none;
     z-index: 15;
-    top: 5%;
+    top: 60%;
     color: white;
 }
 
@@ -354,7 +354,7 @@ img {
 
     #tryItYourself {
         left: 38% !important;
-        margin-top: -73% !important;
+        top: 53% !important;
     }
 
     .tray-item {
