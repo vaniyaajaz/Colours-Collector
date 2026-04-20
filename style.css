@@ -120,7 +120,7 @@ img {
     outline: white 1px solid;
     border: none;
     z-index: 15;
-    top: 30%;
+    top: -30%;
     color: white;
 }
 
